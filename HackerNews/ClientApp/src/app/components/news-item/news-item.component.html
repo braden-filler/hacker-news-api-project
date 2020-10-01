@@ -1,0 +1,13 @@
+<div class="news-item-container">
+  <div class="index-container">
+    {{index}}
+  </div>
+  <div class="story-container">
+    <div *ngIf="story.url">
+      <a href="{{story.url}}" target="_blank">{{story.title}}</a>
+    </div>
+    <div *ngIf="!story.url">
+      <span>{{story.title}}</span>
+    </div>
+  </div>
+</div>
